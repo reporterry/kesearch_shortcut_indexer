@@ -1,0 +1,14 @@
+.idea
+.vagrant
+vendor
+cachegrind.out.*
+*.zip
+*.log
+/gource*
+/Documentation-GENERATED-temp/
+Thumbs.db
+*~
+.Build/Web
+.Build/bin
+.Build/vendor
+/composer.lock
