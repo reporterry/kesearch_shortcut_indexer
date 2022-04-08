@@ -1,5 +1,5 @@
 {
-	"name": "hziegenhain/kesearch_shortcut_indexer",
+	"name": "reporterry/kesearch_shortcut_indexer",
 	"type": "typo3-cms-extension",
 	"description": "ke_search Indexer for shortcut elements",
 	"homepage": "https://gitlab.com/hziegenhain/kesearch_shortcut_indexer",
@@ -20,32 +20,22 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": "^9.5 || ^10.4",
+		"typo3/cms-core": "^9.5 || ^10.4 || ^11.5",
 		"teaminmedias-pluswerk/ke_search": "^3.1.0"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-master"
 	},
 	"suggest": {
-		"typo3/scheduler": "^9.5 || ^10.4"
+		"typo3/scheduler": "^9.5 || ^10.4 || ^11.5"
 	},
 	"replace": {
-		"hziegenhain/kesearch-shortcut-indexer": "*"
+		"hziegenhain/kesearch-shortcut-indexer": "*",
+		"reporterry/kesearch-shortcut-indexer": "*",
 	},
 	"autoload": {
 		"psr-4": {
 			"Hziegenhain\\KesearchShortcutIndexer\\": "Classes/"
 		}
 	},
-	"config": {
-		"vendor-dir": ".Build/vendor/",
-		"bin-dir": ".Build/bin/"
-	},
-	"extra": {
-		"typo3/cms": {
-			"cms-package-dir": "{$vendor-dir}/typo3/cms",
-			"web-dir": ".Build/Web",
-			"extension-key": "kesearch_shortcut_indexer"
-		}
-	}
 }
